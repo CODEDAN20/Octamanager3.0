@@ -1,0 +1,276 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        font-size: 2em;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    section h2 {
+        text-align: center;
+        color: #333;
+    }
+
+#finanzas {
+    background-color: #ecf0f1;
+}
+
+#informacion-financiera {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#grafico-financiero {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#finanzas h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+#grafico-financiero p {
+    text-align: center;
+    color: #777;
+}
+
+
+#compra-venta {
+    background-color: #ecf0f1;
+}
+
+#registro-productos,
+#historial-ventas {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#compra-venta h2 {
+    text-align: center;
+    color: #333;
+}
+
+#registro-productos h3,
+#historial-ventas h3 {
+    text-align: center;
+    color: #333;
+}
+
+#registro-productos form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registro-productos label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#registro-productos input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#registro-productos button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    #registro-productos button:hover {
+        background-color: #2980b9;
+    }
+
+#historial-ventas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    #historial-ventas table th,
+    #historial-ventas table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    #historial-ventas table th {
+        background-color: #3498db;
+        color: #fff;
+    }
+
+
+#distribuidores {
+    background-color: #ecf0f1;
+}
+
+#lista-distribuidores,
+#agregar-distribuidor {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#distribuidores h2 {
+    text-align: center;
+    color: #333;
+}
+
+#lista-distribuidores ul {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-distribuidores li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#agregar-distribuidor h3 {
+    text-align: center;
+    color: #333;
+}
+
+#agregar-distribuidor form {
+    display: flex;
+    flex-direction: column;
+}
+
+#agregar-distribuidor label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#agregar-distribuidor input,
+#agregar-distribuidor textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#agregar-distribuidor button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    #agregar-distribuidor button:hover {
+        background-color: #2980b9;
+    }
+
+
+#administracion-tienda {
+    background-color: #ecf0f1;
+}
+
+#informacion-tienda,
+#empleados-tienda {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#administracion-tienda h2 {
+    text-align: center;
+    color: #333;
+}
+
+#informacion-tienda p {
+    margin-bottom: 10px;
+}
+
+#empleados-tienda h3 {
+    text-align: center;
+    color: #333;
+}
+
+#empleados-tienda ul {
+    list-style: none;
+    padding: 0;
+}
+
+#empleados-tienda li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

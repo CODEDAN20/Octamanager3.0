@@ -1,0 +1,242 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #00d61d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        font-size: 2em;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    section h2 {
+        text-align: center;
+        color: #333;
+    }
+
+
+#informacion-financiera {
+    background-color: #ecf0f1;
+}
+
+#saldo-actual,
+#ingresos-gastos,
+#historial-transacciones,
+#resumen-anual {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #historial-transacciones ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #historial-transacciones li {
+        margin-bottom: 10px;
+    }
+
+
+#grafico-financiero {
+    background-color: #ecf0f1;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chart-container {
+    width: 100%;
+    height: 400px;
+}
+
+
+#agregar-transaccion {
+    background-color: #ecf0f1;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #agregar-transaccion h2 {
+        text-align: center;
+        color: #333;
+    }
+
+#formulario-transaccion {
+    display: flex;
+    flex-direction: column;
+}
+
+    #formulario-transaccion div {
+        margin-bottom: 10px;
+    }
+
+    #formulario-transaccion label {
+        font-weight: bold;
+    }
+
+    #formulario-transaccion input,
+    #formulario-transaccion select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    #formulario-transaccion button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        #formulario-transaccion button:hover {
+            background-color: #2980b9;
+        }
+
+
+
+#calculadora-financiera {
+    background-color: #ecf0f1;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #calculadora-financiera h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    #calculadora-financiera div {
+        margin-bottom: 10px;
+    }
+
+    #calculadora-financiera label {
+        font-weight: bold;
+    }
+
+    #calculadora-financiera input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    #calculadora-financiera button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        #calculadora-financiera button:hover {
+            background-color: #2980b9;
+        }
+
+    #calculadora-financiera #resultado {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+
+#historial-ingresos,
+#historial-gastos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #historial-ingresos h3,
+    #historial-gastos h3 {
+        text-align: center;
+        color: #333;
+    }
+
+    #historial-ingresos table,
+    #historial-gastos table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        #historial-ingresos table th,
+        #historial-gastos table th,
+        #historial-ingresos table td,
+        #historial-gastos table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #historial-ingresos table th,
+        #historial-gastos table th {
+            background-color: #3498db;
+            color: #fff;
+        }

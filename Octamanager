@@ -1,0 +1,40 @@
+--
+-- Archivo generado con SQLiteStudio v3.4.4 el sáb abr 20 14:34:58 2024
+--
+-- Codificación de texto usada: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Tabla: AgregarNuevaTransaccion
+CREATE TABLE IF NOT EXISTS AgregarNuevaTransaccion (IdAgregarNuevaT INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, Tipo TEXT NOT NULL, Monto NUMERIC NOT NULL, Descripcion TEXT NOT NULL);
+
+-- Tabla: AgregarNuevoProducto
+CREATE TABLE IF NOT EXISTS AgregarNuevoProducto (IdAgregarNuevoP INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, NombreProducto TEXT NOT NULL, Cantidad NUMERIC NOT NULL, PrecioUnitario NUMERIC NOT NULL);
+
+-- Tabla: Auditorias
+CREATE TABLE IF NOT EXISTS Auditorias (IdAuditor INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, Fecha NUMERIC NOT NULL, Auditor TEXT NOT NULL, Resultado TEXT NOT NULL, Observaciones TEXT NOT NULL, Acciones TEXT NOT NULL);
+
+-- Tabla: EditarProducto
+CREATE TABLE IF NOT EXISTS EditarProducto (IdEditarP INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, SeleccionarProducto TEXT NOT NULL, NuevoNombre TEXT NOT NULL, NuevaCantidad NUMERIC NOT NULL, NuevoPrecioUnitario NUMERIC NOT NULL);
+
+-- Tabla: GenerarReportes
+CREATE TABLE IF NOT EXISTS GenerarReportes (TipoReporte TEXT NOT NULL, FechaInicio NUMERIC NOT NULL, FechaFin NUMERIC NOT NULL);
+
+-- Tabla: IniciarSesion
+CREATE TABLE IF NOT EXISTS IniciarSesion (IdUsuario INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, Contraseña TEXT NOT NULL);
+
+-- Tabla: NuevaAuditoria
+CREATE TABLE IF NOT EXISTS NuevaAuditoria (IdNuevaAuditoria INTEGER UNIQUE PRIMARY KEY AUTOINCREMENT NOT NULL, Fecha NUMERIC NOT NULL, AuditorAsignado TEXT NOT NULL, Resultado TEXT NOT NULL, Observaciones TEXT NOT NULL);
+
+-- Tabla: ProductosStock
+CREATE TABLE IF NOT EXISTS ProductosStock (IdProductoStock INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE NOT NULL, Producto TEXT NOT NULL, Cantidad NUMERIC NOT NULL, Precio NUMERIC NOT NULL);
+
+-- Tabla: RegistrarCliente
+CREATE TABLE IF NOT EXISTS RegistrarCliente (IdRegistrarCliente INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, Nombre TEXT, Apellido TEXT, CorreoElectronico TEXT NOT NULL, Usuario TEXT NOT NULL, Contraseña TEXT NOT NULL, ConfirmarContraseña TEXT NOT NULL);
+
+-- Tabla: RegistrarVenta
+CREATE TABLE IF NOT EXISTS RegistrarVenta (IdRegistrarVenta INTEGER PRIMARY KEY UNIQUE NOT NULL, Producto TEXT NOT NULL, Cantidad NUMERIC NOT NULL, Total NUMERIC NOT NULL);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

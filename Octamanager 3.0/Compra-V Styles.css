@@ -1,0 +1,177 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #00d61d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        font-size: 2em;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    section h2 {
+        text-align: center;
+        color: #333;
+    }
+
+
+#agregar-producto {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #agregar-producto h3 {
+        text-align: center;
+        color: #333;
+    }
+
+    #agregar-producto table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+        #agregar-producto table tr {
+            margin-bottom: 10px;
+        }
+
+            #agregar-producto table tr td {
+                padding: 10px;
+            }
+
+                #agregar-producto table tr td input[type="text"],
+                #agregar-producto table tr td input[type="number"],
+                #agregar-producto table tr td input[type="file"] {
+                    width: 100%;
+                    padding: 8px;
+                    margin-top: 5px;
+                    box-sizing: border-box;
+                }
+
+    #agregar-producto button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        #agregar-producto button:hover {
+            background-color: #2980b9;
+        }
+
+
+#productos-disponibles {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #productos-disponibles h3 {
+        text-align: center;
+        color: #333;
+    }
+
+#tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    #tabla-productos th,
+    #tabla-productos td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    #tabla-productos th {
+        background-color: #3498db;
+        color: #fff;
+    }
+
+
+#registro-ventas {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #registro-ventas h3 {
+        text-align: center;
+        color: #333;
+    }
+
+    #registro-ventas table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        #registro-ventas table th,
+        #registro-ventas table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #registro-ventas table th {
+            background-color: #3498db;
+            color: #fff;
+        }

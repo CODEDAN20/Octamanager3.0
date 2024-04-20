@@ -1,0 +1,288 @@
+﻿
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        font-size: 2em;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    section h2 {
+        text-align: center;
+        color: #333;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #e74c3c;
+        color: #fff;
+    }
+
+form {
+    margin-top: 20px;
+}
+
+    form button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    header h1 {
+        font-size: 2em;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    section h2 {
+        text-align: center;
+        color: #333;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #3498db;
+        color: #fff;
+    }
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #27ae60;
+    }
+
+
+#detalles-auditoria {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.oculto {
+    display: none;
+}
+
+#revision-informes {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #revision-informes h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    #revision-informes table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        #revision-informes table th,
+        #revision-informes table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #revision-informes table th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+   
+    #revision-informes button {
+        background-color: #2ecc71;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+        #revision-informes button:hover {
+            background-color: #27ae60;
+        }
+
+#nueva-auditoria {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #nueva-auditoria h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    #nueva-auditoria form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nueva-auditoria label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    #nueva-auditoria input,
+    #nueva-auditoria select,
+    #nueva-auditoria textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    #nueva-auditoria button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        #nueva-auditoria button:hover {
+            background-color: #2980b9;
+        }
